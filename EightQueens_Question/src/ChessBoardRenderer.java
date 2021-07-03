@@ -1,6 +1,6 @@
 public class ChessBoardRenderer {
 	public boolean isBlackSquare(int square) {
-		boolean evenRow = (int)square/8 % 2 == 0;
+		boolean evenRow = (square/8) % 2 == 0;
 		// Even rows have black squares in odd places
 		if (evenRow && square % 2 != 0)
 			return true;
